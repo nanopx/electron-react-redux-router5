@@ -1,7 +1,7 @@
 # electron-react-redux-router5
 A boilerplate using Electron + React + Redux + Router5, including hot module replacements.
-> Universal web-app version of this boilerplate using [hapi](http://hapijs.com/) could be found here: [universal-react-redux-hapi](https://github.com/nanopx/universal-react-redux-hapi)
-> Client-only web-app version of this boilerplate could be found here: [react-redux-router5](https://github.com/nanopx/react-redux-router5)
+- Universal web-app version of this boilerplate using [hapi](http://hapijs.com/) could be found here: [universal-react-redux-hapi](https://github.com/nanopx/universal-react-redux-hapi)
+- Client-only web-app version of this boilerplate could be found here: [react-redux-router5](https://github.com/nanopx/react-redux-router5)
 
 [![Dependency Status](https://david-dm.org/nanopx/electron-react-redux-router5.svg?style=flat-square)](https://david-dm.org/nanopx/electron-react-redux-router5)
 [![devDependency Status](https://david-dm.org/nanopx/electron-react-redux-router5/dev-status.svg?style=flat-square)](https://david-dm.org/nanopx/electron-react-redux-router5#info=devDependencies)
