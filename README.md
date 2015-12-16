@@ -7,8 +7,12 @@ A boilerplate using Electron + React + Redux + Router5, including hot module rep
 [![devDependency Status](https://david-dm.org/nanopx/electron-react-redux-router5/dev-status.svg?style=flat-square)](https://david-dm.org/nanopx/electron-react-redux-router5#info=devDependencies)
 
 ## Features
+* [Electron](http://electron.atom.io/)
+  - For building desktop apps.
+* [electron-packager](https://github.com/maxogden/electron-packager)
+  - For packaging electron apps.
 * [React Hot Loader](https://gaearon.github.io/react-hot-loader/)
-  - For hot reloads
+  - For hot reloads.
 * [React](https://facebook.github.io/react/)
   - For the UI.
 * [Radium](http://projects.formidablelabs.com/radium/) + [react-styling](https://github.com/halt-hammerzeit/react-styling)
@@ -20,7 +24,7 @@ A boilerplate using Electron + React + Redux + Router5, including hot module rep
 * [Router5](http://router5.github.io/)
   - For routing.
 * [webpack](http://webpack.github.io/)
-  * For building client bundles.
+  * For building bundles.
 * [Babel6](https://babeljs.io/)
   * For transpiling ES6(ES2015), and ES7(ES2016).
 * [ESLint](http://eslint.org/)
@@ -28,8 +32,6 @@ A boilerplate using Electron + React + Redux + Router5, including hot module rep
 * [mocha](https://mochajs.org/), [nock](https://github.com/pgte/nock) & [power-assert](https://github.com/power-assert-js/power-assert)
   * For testing.
   * power-assert supports async/await, which can be used with [redux-promise](https://github.com/acdlite/redux-promise)
-* [express](expressjs.com)
-  * For production web server (serves static files)
 
 > Personally, I think Router5 is better for managing the `props` than [React Router](https://github.com/rackt/react-router).
 > No `React.cloneElement` with `this.props.children`, no confusion with React's `props`, etc.
