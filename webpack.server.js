@@ -41,5 +41,3 @@ const server = new WebpackDevServer(compiler, {
 });
 
 export default server;
-
-// server.close();

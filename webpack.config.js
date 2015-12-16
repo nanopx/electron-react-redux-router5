@@ -82,10 +82,3 @@ export const resolve = {
 export const externals = [
   'electron',
 ];
-
-// export const target = function renderer(compiler) {
-//   compiler.apply(
-//     new webpack.JsonpTemplatePlugin(output),
-//     new FunctionModulePlugin(output)
-//   );
-// };
