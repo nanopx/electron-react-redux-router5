@@ -43,25 +43,32 @@ $ git clone https://github.com/nanopx/electron-react-redux-router5.git MyApp
 $ cd MyApp
 $ npm install
 ```
+> NOTE: You may need to `$ npm install electron-prebuilt -g`
 
 **Start development server**
 ```
-$ npm start
+$ NODE_ENV=development npm start
 ```
-> This automatically fires the App
+OR
+```
+$ npm run start-dev
+```
+> This automatically fires the App.
+> Alternatively, you can use your browser to develop your app. Go to `http://localhost:3000` in your browser.
 
 **Creating the package**
 ```
-$ NODE_ENV=production npm run build
-$ npm run build-app
+$ npm run package
 ```
-> Will be created under `./release/`
+> The app will be created under `./release/`
+
+> See `./package.js` and [here](https://github.com/maxogden/electron-packager) for packaging options.
 
 **Linting**
 ```
 $ npm run lint
 ```
-`$ npm start` in development mode, will also lint your codes every time it builds.
+`$ npm run start-dev` will also lint your codes every time it builds.
 
 
 **Testing**

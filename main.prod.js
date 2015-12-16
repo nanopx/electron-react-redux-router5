@@ -1,4 +1,7 @@
-import electron from 'electron';
+/* eslint strict: 0 */
+'use strict';
+
+const electron = require('electron');
 const app = electron.app;  // Module to control application life.
 const BrowserWindow = electron.BrowserWindow;  // Module to create native browser window.
 

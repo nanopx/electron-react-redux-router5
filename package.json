@@ -9,11 +9,11 @@
   },
   "homepage": "https://github.com/nanopx/electron-react-redux-router5",
   "scripts": {
-    "server-only": "node index.js",
     "start": "electron .",
-    "start-hot": "HOT=1 electron .",
-    "build": "webpack --verbose --colors --display-error-details --config build.config.js",
-    "build-app": "electron-packager . TestApp --platform=darwin --arch=x64 --version=0.36.0 --out=release --ignore='node_modules/(electron-packager|electron-prebuilt)'",
+    "start-dev": "NODE_ENV=development electron .",
+    "build": "NODE_ENV=production webpack --verbose --colors --display-error-details --config build.config.js",
+    "build-app": "NODE_ENV=production node package.js",
+    "package": "npm run build && npm run build-app",
     "lint": "eslint ./; exit 0",
     "test": "mocha --require babel-core/register"
   },
