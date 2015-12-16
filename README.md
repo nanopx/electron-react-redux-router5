@@ -36,8 +36,6 @@ A boilerplate using Electron + React + Redux + Router5, including hot module rep
 > Personally, I think Router5 is better for managing the `props` than [React Router](https://github.com/rackt/react-router).
 > No `React.cloneElement` with `this.props.children`, no confusion with React's `props`, etc.
 
-## WIP
-
 ## Getting started
 **First steps...**
 ```
