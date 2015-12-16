@@ -10,8 +10,6 @@ export const GLOBALS = {
   }, {}),
 };
 
-export const target = 'web';
-
 export const cache = false;
 
 export const context = __dirname;
@@ -28,16 +26,17 @@ export const entry = {
 export const output = {
   path: path.join(__dirname, 'static'),
   filename: 'bundle.js',
-  publicPath: 'http://localhost:3000/',
+  publicPath: '/static/',
 };
 
 export const plugins = [
   new webpack.DefinePlugin(GLOBALS),
   new webpack.optimize.DedupePlugin(),
   new webpack.optimize.OccurenceOrderPlugin(),
+  new webpack.NoErrorsPlugin(),
   new webpack.optimize.UglifyJsPlugin({
     compress: {
-      // don't display warnings
+      screw_ie8: true,
       warnings: false,
     },
   }),
@@ -79,3 +78,14 @@ export const resolve = {
   ],
   extensions: ['', '.json', '.js', '.jsx'],
 };
+
+export const externals = [
+  'electron',
+];
+
+// export const target = function renderer(compiler) {
+//   compiler.apply(
+//     new webpack.JsonpTemplatePlugin(output),
+//     new FunctionModulePlugin(output)
+//   );
+// };

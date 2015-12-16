@@ -1,8 +1,9 @@
 require('babel-core/register')();
 require('babel-polyfill');
-require('./main');
-// if (process.env.NODE_ENV === 'production') {
-//   require('./server');
-// } else {
-//   require('./webpack.server');
-// }
+
+// require the main electron application
+if (process.env.NODE_ENV === 'production') {
+  require('./main.prod');
+} else {
+  require('./main.dev');
+}

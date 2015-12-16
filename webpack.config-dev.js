@@ -4,13 +4,14 @@ import * as config from './webpack.config';
 
 const {GLOBALS} = config;
 
+config.output.publicPath = 'http://localhost:3000/';
+
 config.cache = true;
 config.debug = true;
-config.devtool = 'eval';
-
+config.devtool = 'cheap-module-eval-source-map';
 config.entry.app.unshift(
   'webpack-dev-server/client?http://localhost:3000',
-  'webpack/hot/dev-server',
+  'webpack/hot/only-dev-server',
 );
 
 config.plugins = [

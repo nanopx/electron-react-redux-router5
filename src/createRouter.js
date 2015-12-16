@@ -3,7 +3,7 @@ import historyPlugin from 'router5-history';
 
 export default function createRouter() {
   const router = new Router5()
-    .setOption('useHash', false)
+    .setOption('useHash', true)
     .setOption('defaultRoute', 'home')
     .setOption('trailingSlash', false)
     // Routes
