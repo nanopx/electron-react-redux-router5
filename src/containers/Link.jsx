@@ -10,17 +10,17 @@ class Link extends Component {
     params: PropTypes.object,
     options: PropTypes.object,
     navigateTo: PropTypes.func.isRequired,
-  }
+  };
 
   static contextTypes = {
     router: PropTypes.object.isRequired,
-  }
+  };
 
   static defaultProps = {
     element: 'a',
     params: {},
     options: {},
-  }
+  };
 
   constructor(props, context) {
     super(props);

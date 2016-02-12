@@ -14,7 +14,7 @@ class Home extends Component {
     button: {
       color: 'red',
     },
-  }
+  };
 
   render() {
     return (
