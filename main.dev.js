@@ -12,7 +12,7 @@ const BrowserWindow = electron.BrowserWindow;  // Module to create native browse
 console.info('==> Booting the app...'); // eslint-disable-line no-console
 
 // Report crashes to our server.
-electron.crashReporter.start();
+// electron.crashReporter.start();
 
 // Keep a global reference of the window object, if you don't, the window will
 // be closed automatically when the JavaScript object is garbage collected.
